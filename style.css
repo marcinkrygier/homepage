@@ -5,28 +5,29 @@ p{
     color: #423e3e;
 }
 h1{
-    color:green;
+    color:#24b4f7;
 }
 body{
-    background: #b84c4c;
+    background: grey;
 }
 section{
-    background: #dfae10;
+    background: black;
 }
 h3{
-    color:green;
+    color:#24b4f7;
 }
 .hotpink-header{
     color: #AD7A99;
 }
 h2{
-    color:green;
+    color:#24b4f7;
 }
 #top{
-    background:#dfae10;
+    background:black;
 }
 nav a {
-    color:green;
+    color:#24b4f7;
+    background-color: black;
 }
 a{
     color:tomato;
