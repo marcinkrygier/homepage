@@ -1,76 +1,84 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <a href="index.html">STRONA GŁÓWNA</a>
-            <a href="nauka-html.html">NAUKA HTML</a>
-            <a href="dlaPrzedsiebiorcy.html">DLA PRZEDSIEBIORCY</a>
-            <a href="dlaPracownika.html">DLA PRACOWNIKA</a>
-
-        </nav>
-
+      <nav class="navigation">
+        <a class="navigation__link" href="index.html">STRONA GŁÓWNA</a>
+        <a class="navigation__link" href="nauka-html.html">NAUKA HTML</a>
+        <a class="navigation__link" href="dlaPrzedsiebiorcy.html">DLA PRZEDSIEBIORCY</a>
+        <a class="navigation__link" href="dlaPracownika.html">DLA PRACOWNIKA</a>
+      </nav>
     </header>
     <main>
-        <header id=top>
-            <h1>Marcin Krygier Strona domowa</h1>
-        </header>
-        <section>
-            <h2>Kim Jestem?</h2>
-            <img src="zdjecie1.jpg" alt="Zdjęcie rekrutera">
-            <p>Jesteśmy organizacją dzięki której biura pośrednictwa pracy tymczasowej mogą wymieniać się
-                <b>pracownikami tymczasowymi. </b><br>
-                Chcemy się ciągle rozwijać, dlatego dodajemy nową zakładke z aktualnymi ofertami pracy.<br>
-                Zależy nam na tym żeby każdy znalazł <i>wymarzone stanowisko pracy.</i><br>
-                Wszystkie ogłoszenia zanjdziesz na stronie <a href="https://pracuj.pl">PRACUJ.PL</a><br>
-                Przejdź do działu dla przedsiebiorców <a href="#dlaPrzedsiebiorcow">Dla Przedsiebiorców</a></p>
-        </section>
+      <header class="main-heading--js" id="top">
+        <h1>Marcin Krygier Strona domowa</h1>
+      </header>
+      <section>
+        <h2>Kim Jestem?</h2>
+        <img src="zdjecie-rekrutera.jpg" alt="Zdjęcie rekrutera" />
+        <p>
+          Jesteśmy organizacją dzięki której biura pośrednictwa pracy
+          tymczasowej mogą wymieniać się <b>pracownikami tymczasowymi. </b
+          ><br />
+          Chcemy się ciągle rozwijać, dlatego dodajemy nową zakładke z
+          aktualnymi ofertami pracy.<br />
+          Zależy nam na tym żeby każdy znalazł <i>wymarzone stanowisko pracy.</i
+          ><br />
+          Wszystkie ogłoszenia zanjdziesz na stronie
+          <a href="https://pracuj.pl">PRACUJ.PL</a><br />
+          Przejdź do działu dla przedsiebiorców
+          <a href="#dlaPrzedsiebiorcow">Dla Przedsiebiorców</a>
+        </p>
+      </section>
 
-        <section id="dlaPrzedsiebiorcow">
-            <h2>Dla przedsiębiorcy</h2>
-            <article>
-                <h3 class="hotpink-header">Szukam pracowników</h3>
-                <p><strong>Jeżeli jesteś biurem pracy i jesteś zainteresowany pozyskaniem pracowników.</strong> Podaj
-                    dane kogo szukasz.
-                </p>
-            </article>
+      <section id="dlaPrzedsiebiorcow">
+        <h2>Dla przedsiębiorcy</h2>
+        <article>
+          <h3 class="hotpink-header">Szukam pracowników</h3>
+          <p>
+            <strong
+              >Jeżeli jesteś biurem pracy i jesteś zainteresowany pozyskaniem
+              pracowników.</strong
+            >
+            Podaj dane kogo szukasz.
+          </p>
+        </article>
 
-            <article>
-                <h3 class="hotpink-header"> Posiadam pracowników</h3>
-                <p><em>Jeżeli jesteś biurem pośrednictwa pracy i posiadasz pracowników którym chcesz znaleźć prace
-                        napisz.</em>
-                </p>
-            </article>
-        </section>
+        <article>
+          <h3 class="hotpink-header">Posiadam pracowników</h3>
+          <p>
+            <em
+              >Jeżeli jesteś biurem pośrednictwa pracy i posiadasz pracowników
+              którym chcesz znaleźć prace napisz.</em
+            >
+          </p>
+        </article>
+      </section>
 
-        <section>
-            <h2>Dla pracownika</h2>
-            <article>
-                <h3> Oferty pracy</h3>
-                <p> Aktualne oferty pracy, znajdź pracę dla siebie</p>
-            </article>
+      <section>
+        <h2>Dla pracownika</h2>
+        <article>
+          <h3>Oferty pracy</h3>
+          <p>Aktualne oferty pracy, znajdź pracę dla siebie</p>
+        </article>
 
-            <article>
-                <h3>Szukam pracy</h3>
-                <p>Dodaj swoją oferte i załaduj CV</p>
-            </article>
-
-
-        </section>
+        <article>
+          <h3>Szukam pracy</h3>
+          <p>Dodaj swoją oferte i załaduj CV</p>
+        </article>
+      </section>
     </main>
     <footer>
-        Strona domowa Marcin Krygier. Wszelkie prawa zastrzeżone <a href=#top>Wróć na górę strony</a>
+      Strona domowa Marcin Krygier. Wszelkie prawa zastrzeżone
+      <a href="#top">Wróć na górę strony</a>
     </footer>
-    <script src="main.js">
-    </script>
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>

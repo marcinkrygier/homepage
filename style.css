@@ -1,34 +1,52 @@
-h1{
-    color:purple;
+h1 {
+  color: purple;
 }
-p{
-    color: #423e3e;
+p {
+  color: #423e3e;
 }
-h1{
-    color:#24b4f7;
+h1 {
+  color: #24b4f7;
 }
-body{
-    background: grey;
+body {
+  background: #363434;
 }
-section{
-    background: black;
+section {
+  background: black;
 }
-h3{
-    color:#24b4f7;
+h3 {
+  color: #24b4f7;
 }
-.hotpink-header{
-    color: #AD7A99;
+.hotpink-header {
+  color: #ad7a99;
 }
-h2{
-    color:#24b4f7;
+h2 {
+  color: #24b4f7;
 }
-#top{
-    background:black;
+#top {
+  background: black;
 }
 nav a {
-    color:#24b4f7;
-    background-color: black;
+  color: yellow;
+  background-color: green;
 }
-a{
-    color:tomato;
+a {
+  color: #f79381;
+}
+.navigation{
+    background:tomato;
+    padding: 20px;
+    border-radius: 10px;
+    position: sticky;
+    top: 5px;
+    
+}
+.navigation__link{
+    background:black;
+    color:#24b4f7;
+    display: inline-block;
+   
+    padding:10px 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
