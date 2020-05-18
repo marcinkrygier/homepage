@@ -1,9 +1,40 @@
 const name = "Marcin";
 const age = 34;
 const pies = "Volt";
-console.log(
-  `Dzień dobry. Nazywam się ${name}. Mam ${age} lata i psa o imieniu ${pies}.`
-);
 
-const heading = document.querySelector('.main-heading--js');
-console.log(heading);
+
+
+
+
+
+
+function calculateOld(myNumber){
+  console.log(`Dostalem ${myNumber}`);
+  return myNumber*3;
+}
+const myResult=calculateOld(2);
+console.log(myResult);
+
+
+const calculate=(number)=>number*4;
+
+console.log(calculate(4));
+
+function greetOld (age, name){
+  console.log( `Cześć, nazywam sie ${name} i mam ${age} lata`);
+
+}
+greetOld(age,name);
+
+function createContent(querySelectorContent, content){
+  const element=document.querySelector(querySelectorContent);
+  element.innerHTML=content;
+}
+createContent(`.article__description--js`, `CZESC TU JS`);
+
+
+
+const greet=(name, age)=>{
+  console.log( `Cześć, z tej strony ${name}, który ma ${age} lata`);
+}
+greet (`Marcin`, age);

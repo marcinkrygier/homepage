@@ -1,52 +1,111 @@
-h1 {
-  color: purple;
+html {
+  box-sizing: border-box;
 }
-p {
-  color: #423e3e;
-}
-h1 {
-  color: #24b4f7;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 body {
-  background: #363434;
+  background: rgb(19, 129, 130);
+  background: linear-gradient(
+    308deg,
+    rgba(19, 129, 130, 0.8393732492997199) 8%,
+    rgba(59, 56, 51, 1) 93%
+  );
+  background-size: cover;
 }
 section {
   background: black;
 }
-h3 {
-  color: #24b4f7;
-}
-.hotpink-header {
-  color: #ad7a99;
+
+h4 {
+  color: white;
 }
 h2 {
-  color: #24b4f7;
+  color: blue;
 }
 #top {
-  background: black;
 }
 nav a {
   color: yellow;
-  background-color: green;
 }
-a {
-  color: #f79381;
+
+.navigation {
+  background: tomato;
+  padding: 0px;
+  border: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  position: sticky;
+  top: 5px;
+  display: flex;
+  justify-content: space-around;
 }
-.navigation{
-    background:tomato;
-    padding: 20px;
-    border-radius: 10px;
-    position: sticky;
-    top: 5px;
-    
+.navigation__link {
+  display: inline-block;
+  color: #0e5575;
+  padding: 5px 5px;
+  border-radius: 10px;
+  margin: 5px 5px;
+  border: solid;
 }
-.navigation__link{
-    background:black;
-    color:#24b4f7;
-    display: inline-block;
-   
-    padding:10px 20px;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-bottom: 5px;
+.main {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+.main__header {
+  background: black;
+  padding: 10px;
+  border: 5px solid purple;
+  border-radius: 20px;
+  margin: 20px;
+}
+.main__heading {
+  color: purple;
+}
+.about {
+  background: black;
+  padding: 20px;
+  border: 5px solid blue;
+  border-radius: 20px;
+  margin: 20px;
+}
+.about__heading {
+  color: blue;
+}
+.about__picture {
+  width: 200px;
+  float: left;
+  padding: 0px 20px;
+}
+.about__description {
+  color: #24b4f7;
+}
+.about__link {
+  color: purple;
+}
+.article {
+  background: black;
+  padding: 20px;
+  border: 5px solid blue;
+  border-radius: 20px;
+  margin: 20px;
+}
+.article__header {
+  color: blue;
+}
+.article__heading {
+  color: #24b4f7;
+}
+.article__description {
+  color: green;
+}
+.footer {
+  width: 1000px;
+  margin: 10px auto;
+}
+.footer__link {
+  color: tomato;
 }

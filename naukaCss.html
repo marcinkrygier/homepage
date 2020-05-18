@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">STRONA GŁÓWNA</a>
+        <a href="nauka-html.html">NAUKA HTML</a>
+        <a href="naukaJS.html">NAUKA JS</a>
+        <a href="naukaCss.html">NAUKA CSS</a>
+      </nav>
+    </header>
+    <main>
+      <header id="top">
+        <h1>NAUKA CSS</h1>
+      </header>
+      <section>
+        <h2>Oferty pracy</h2>
+        <p>justify-content, właściwości która wyrównuje elementy w poziomie i przyjmuje wartości:
+          flex-start: Elementy wyrównują się do lewej strony kontenera.
+          flex-end: Elementy wyrównują się do prawej strony kontenera.
+          center: Elementy wyrównują się do środka kontenera.
+          space-between: Elementy wyświetlają się na całej szerokości kontenera z równymi odstępami.
+          space-around: Każdy z elementów wyświetla się z taką samą ilością przestrzeni wokół.
+          Na przykład: justify-content: flex-end; przesunie żabę do prawej strony.
+          
+          align-items Ta właściwość CSS wyrównuje elementy w pionie i przyjmuje wartości:
+          flex-start: Elementy wyrównują się do górnej krawędzi kontenera.
+          flex-end: Elementy wyrównują się do dolnej krawędzi kontenera.
+          center: Elementy zostaną wyśrodkowane w pionie.
+          baseline: Elementy zostaną wyświetlone na linii odniesienia kontenera.
+          stretch: Elementy zostaną powiększone tak, aby wypełnić kontener.
+          
+          flex-direction. Określa ona kierunek w jakim elementy są rozmieszczone w kontenerze i przyjmuje wartości:
+          row: Elementy zostaną rozmieszczone tak jak tekst.
+          row-reverse: Elementy zostaną rozmieszczone odwrotnie do kierunku tekstu.
+          column: Elementy zostaną rozmieszczone od góry do dołu.
+          column-reverse: Elementy zostaną rozmieszczone od dołu do góry.
+          
+          Zauważ, że w przypadku gdy flex direction ma wartość column to justify-content wyrównuje element pionowo, a align-items poziomo.
+          
+          Czasami odwracanie wierszy i kolumn kontenera nie wystarcza. W takich przypadkach, możemy zastosować własność order do pojedynczego elementu. Domyślnie elementy mają wartość 0, ale przy pomocy tej własności możemy ustalić kolejność na dowolną dodatnią lub ujemną wartość.
+          
+          align-self. Przyjmuje ona wartości takie same jak align-items, ale ma zastosowanie tylko wobec konkretnego elementu. 
+          #pond {
+          display: flex;
+            align-items: flex-start;
+          }
+          .yellow {
+          
+          flex-wrap, która przyjmuje wartości:
+          nowrap: Każdy element dopasowuje się do pojedynczego wiersza.
+          wrap: Elementy wystające przechodzą do kolejnych linii.
+          wrap-reverse: Elementy wystające do kolejnych linii w odwrotnej kolejności.
+          
+          Jednoczesne zastosowanie własności flex-direction i flex-wrap występuje bardzo często, dlatego też utworzono własność skrótową flex-flow. Przyjmuje ona dwie wartości rozdzielone spacją.
+          Na przykład: wpisując flex-flow: row wrap uzyskamy efekt ułożenia elementów w wierszu i zawijanie ich do kolejnych linii w przypadku gdy któryś wystawałby poza kontener.
+          
+          align-content pomoże ci ustalić odległość wierszy kontenera od siebie. Własność ta przyjmuje takie wartości:
+          flex-start: Wiersze upychają u góry kontenera.
+          flex-end: Wiersze upychają się w dolnej części kontenera.
+          center: Wiersze upychane są pośrodku kontenera.
+          space-between: Wiersze wyświetlane są z równymi odstępami.
+          space-around: Wiersze wyświetlane są z równymi odstępami dookoła.
+          stretch: Wiersze rozszerzają się tak, aby dopasować się do kontenera.
+          Może to być trochę pogmatwane ale align-content określa odstępy między wierszami podczas, gdy align-items określa jak elementy, jako całość, wyrównują się względem kontenera. W przypadku, gdy jest tylko jedna linia, align-content nie przynosi żadnego efektu.
+          .</p>
+      </section>
+      <section>
+        <h2>Szukam pracy</h2>
+        <p>Dodaj swoją oferte i załaduj CV.</p>
+      </section>
+    </main>
+    <footer>
+      Strona domowa Marcin Krygier. Wszelkie prawa zastrzeżone
+      <a href="#top">Wróć na górę strony</a>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -4,26 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-    <header>
-      <nav class="navigation">
-        <a class="navigation__link" href="index.html">STRONA GŁÓWNA</a>
-        <a class="navigation__link" href="nauka-html.html">NAUKA HTML</a>
-        <a class="navigation__link" href="dlaPrzedsiebiorcy.html">DLA PRZEDSIEBIORCY</a>
-        <a class="navigation__link" href="dlaPracownika.html">DLA PRACOWNIKA</a>
-      </nav>
-    </header>
-    <main>
-      <header class="main-heading--js" id="top">
-        <h1>Marcin Krygier Strona domowa</h1>
+    <main class="main" id="top">
+      <div>
+        <nav class="navigation">
+          <a class="navigation__link" href="index.html">STRONA GŁÓWNA</a>
+          <a class="navigation__link" href="nauka-html.html">NAUKA HTML</a>
+          <a class="navigation__link" href="naukaJS.html">NAUKA JS</a>
+          <a class="navigation__link" href="naukaCss.html">NAUKA CSS</a>
+        </nav>
+      </div>
+      <header class="main__header">
+        <h1 class="main__heading">
+          Marcin Krygier Strona domowa
+        </h1>
       </header>
-      <section>
-        <h2>Kim Jestem?</h2>
-        <img src="zdjecie-rekrutera.jpg" alt="Zdjęcie rekrutera" />
-        <p>
+
+      <section class="about">
+        <h2 class="about__heading">
+          Kim Jestem?
+        </h2>
+        <img
+          class="about__picture"
+          src="MarcinKrygier.jpg"
+          alt="Zdjecie-Marcin"
+        />
+        <p class="about__description">
           Jesteśmy organizacją dzięki której biura pośrednictwa pracy
           tymczasowej mogą wymieniać się <b>pracownikami tymczasowymi. </b
           ><br />
@@ -32,17 +42,17 @@
           Zależy nam na tym żeby każdy znalazł <i>wymarzone stanowisko pracy.</i
           ><br />
           Wszystkie ogłoszenia zanjdziesz na stronie
-          <a href="https://pracuj.pl">PRACUJ.PL</a><br />
+          <a class="about__link" href="https://pracuj.pl">PRACUJ.PL</a><br />
           Przejdź do działu dla przedsiebiorców
-          <a href="#dlaPrzedsiebiorcow">Dla Przedsiebiorców</a>
+          <a class="about__link" href="#naukaJS.html">Dla Przedsiebiorców</a>
         </p>
       </section>
 
-      <section id="dlaPrzedsiebiorcow">
-        <h2>Dla przedsiębiorcy</h2>
+      <section class="article" id="naukaJS.html">
+        <h2 class="article__header">Dla przedsiębiorcy</h2>
         <article>
-          <h3 class="hotpink-header">Szukam pracowników</h3>
-          <p>
+          <h3 class="article__heading">Szukam pracowników</h3>
+          <p class="article__description">
             <strong
               >Jeżeli jesteś biurem pracy i jesteś zainteresowany pozyskaniem
               pracowników.</strong
@@ -52,8 +62,8 @@
         </article>
 
         <article>
-          <h3 class="hotpink-header">Posiadam pracowników</h3>
-          <p>
+          <h3 class="article__heading">Posiadam pracowników</h3>
+          <p class="article__description">
             <em
               >Jeżeli jesteś biurem pośrednictwa pracy i posiadasz pracowników
               którym chcesz znaleźć prace napisz.</em
@@ -62,23 +72,27 @@
         </article>
       </section>
 
-      <section>
-        <h2>Dla pracownika</h2>
+      <section class="article" id="naukaCss">
+        <h2 class="article__header">Dla pracownika</h2>
         <article>
-          <h3>Oferty pracy</h3>
-          <p>Aktualne oferty pracy, znajdź pracę dla siebie</p>
+          <h3 class="article__heading">Oferty pracy</h3>
+          <p class="article__description">
+            Aktualne oferty pracy, znajdź pracę dla siebie
+          </p>
         </article>
 
         <article>
-          <h3>Szukam pracy</h3>
-          <p>Dodaj swoją oferte i załaduj CV</p>
+          <h3 class="article__heading">Szukam pracy</h3>
+          <p class="article__description">Dodaj swoją oferte i załaduj CV</p>
+          <p class="article__description article__description--js">HEY HEY</p>
         </article>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       Strona domowa Marcin Krygier. Wszelkie prawa zastrzeżone
-      <a href="#top">Wróć na górę strony</a>
+      <a class="footer__link" href="#top">Wróć na górę strony</a>
     </footer>
+
     <script src="main.js"></script>
   </body>
 </html>
