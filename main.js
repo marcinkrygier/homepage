@@ -35,6 +35,13 @@ createContent(`.article__description--js`, `CZESC TU JS`);
 
 
 const greet=(name, age)=>{
-  console.log( `Cześć, z tej strony ${name}, który ma ${age} lata`);
+  console.log( 
+    `Cześć, z tej strony ${name}, który ma ${age} lata`
+    );
 }
 greet (`Marcin`, age);
+
+if (!(`jaasript`==`java`)){
+
+  console.log(`tosie wykona`)
+}
