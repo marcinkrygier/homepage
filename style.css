@@ -8,7 +8,6 @@ html {
   box-sizing: inherit;
 }
 body {
-  
   background: rgb(19, 129, 130);
   background: linear-gradient(
     308deg,
@@ -37,17 +36,16 @@ nav a {
   background: white;
   min-height: 60px;
   position: fixed;
-  top:0;
-  width:100%;
+  top: 0;
+  width: 100%;
 }
 .navigation {
- padding: 15px;
- display: none;
+  padding: 15px;
+  display: none;
 }
 
-.navigation--open{
-  display:block;
-
+.navigation--open {
+  display: block;
 }
 .navigation__link {
   display: block;
@@ -58,10 +56,8 @@ nav a {
   border: solid;
 }
 .main {
- 
   max-width: 1000px;
   margin: 60px auto 0;
-
 }
 .main__header {
   background: rgba(85, 13, 85, 0.603);
@@ -94,25 +90,27 @@ nav a {
 .about__link {
   color: purple;
 }
-.article {
+.section {
   background: black;
   padding: 20px;
   border: 5px solid blue;
   border-radius: 20px;
   margin: 20px;
 }
-.article__header {
+.section__header {
   color: blue;
 }
-.article__heading {
-  color: #24b4f7;
+.article__header {
+  color: limegreen;
 }
 .article__description {
   color: green;
 }
 .footer {
-  width: 1000px;
+  justify-content: center;
+
   margin: 10px auto;
+  display: flex;
 }
 .footer__link {
   color: tomato;
@@ -142,15 +140,16 @@ nav a {
   background: yellow;
 }
 
-.hamburger{
-  color:blue;
-position: absolute;
-top:16px;
-right:16px;
-border: none;
-background: none;
-
+.hamburger {
+  color: blue;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background: none;
 }
+
+
 
 @media (min-width: 768px) {
   .navigation {
@@ -173,7 +172,13 @@ background: none;
     margin: 5px 5px;
     border: solid;
   }
-  .hamburger{
+  .hamburger {
     display: none;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
   }
 }
