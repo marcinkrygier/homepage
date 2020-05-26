@@ -55,6 +55,12 @@ nav a {
   margin: 0 0 15px;
   border: solid;
 }
+.navigation__link:hover{
+  color: greenyellow;
+}
+.navigation__link:focus{
+  color: black;
+}
 .main {
   max-width: 1000px;
   margin: 60px auto 0;
@@ -106,6 +112,30 @@ nav a {
 .article__description {
   color: green;
 }
+.article__header::before{
+content:"";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 10%;
+  background: yellow;
+}
+.article__header::after{
+  content:"";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: purple;
+  }
+  .article__description:hover{
+    background:grey;
+  }  
+
+
+ 
+  
+  
 .footer {
   justify-content: center;
 
